@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🗞️ Newspaper Library </title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
-    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -42,6 +45,17 @@
             margin-bottom: 0.5rem;
             font-weight: 700;
             letter-spacing: -0.5px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .header h1 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .header h1 a:hover {
+            color: #667eea;
         }
         
         .header p {
@@ -61,6 +75,7 @@
             padding-left: 1rem;
             border-left: 5px solid #764ba2;
             font-weight: 600;
+            font-family: 'Playfair Display', serif;
         }
         
         .links-grid {
@@ -91,12 +106,13 @@
         .link-text {
             flex: 1;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 400;
             color: #2d3748;
+            font-family: 'Libre Baskerville', serif;
         }
         
         .link-text.bangla {
-            font-family: 'SolaimanLipi', sans-serif;
+            font-family: 'Kalpurush', sans-serif;
         }
         
         .link-item:hover .link-text {
@@ -134,7 +150,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📚 Global Journal</h1>
+            <h1><a href="https://globaljournal.vercel.app/">📚 Global Journal</a></h1>
             <p>🗞 A Collection of News & Publications</p>
         </div>
         
@@ -409,11 +425,11 @@
                     <img src="https://www.google.com/s2/favicons?sz=64&domain=bbc.com" alt="" class="favicon">
                 </a>
                 <a href="https://www.dw.com/bn/" class="link-item">
-                    <span class="link-text bangla">ডয়েচেভেলে বাংলা</span>
+                    <span class="link-text bangla">ডয়েচেভেলে বাংলা</span>
                     <img src="https://www.google.com/s2/favicons?sz=64&domain=dw.com" alt="" class="favicon">
                 </a>
                 <a href="https://www.voabangla.com/" class="link-item">
-                    <span class="link-text bangla">ভয়েস অফ আমেরিকা বাংলা</span>
+                    <span class="link-text bangla">ভয়েস অফ আমেরিকা বাংলা</span>
                     <img src="https://www.google.com/s2/favicons?sz=64&domain=voabangla.com" alt="" class="favicon">
                 </a>
                 <a href="https://parstoday.ir/bn" class="link-item">
@@ -429,11 +445,11 @@
                     <img src="https://www.google.com/s2/favicons?sz=64&domain=indianexpress.com" alt="" class="favicon">
                 </a>
                 <a href="https://andolanpotrika.com/" class="link-item">
-                    <span class="link-text bangla">আন্দোলন | সাপ্তাহিক পত্রিকা</span>
+                    <span class="link-text bangla">সাপ্তাহিক আন্দোলন</span>
                     <img src="https://www.google.com/s2/favicons?sz=64&domain=andolanpotrika.com" alt="" class="favicon">
                 </a>
                 <a href="https://lalshongbad.wordpress.com/" class="link-item">
-                    <span class="link-text bangla">লাল সংবাদ/lal shongbad</span>
+                    <span class="link-text bangla">লাল সংবাদ</span>
                     <img src="https://www.google.com/s2/favicons?sz=64&domain=lalshongbad.wordpress.com" alt="" class="favicon">
                 </a>
             </div>
