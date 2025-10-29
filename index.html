@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Library - News & Publications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 400;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 5px solid #764ba2;
+            font-weight: 600;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.2rem;
+            background: white;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #2d3748;
+            transition: all 0.3s ease;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+        
+        .link-text {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #2d3748;
+        }
+        
+        .link-item:hover .link-text {
+            color: #667eea;
+        }
+        
+        .favicon {
+            width: 32px;
+            height: 32px;
+            margin-left: 12px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Reading Library</h1>
+            <p>🗞 A Collection of News & Publications</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">🌎 Western News</h2>
+            <div class="links-grid">
+                <a href="https://www.removepaywall.com/" class="link-item">
+                    <span class="link-text">RemovePaywall</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=removepaywall.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.smry.ai/" class="link-item">
+                    <span class="link-text">smry.ai</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=smry.ai" alt="" class="favicon">
+                </a>
+                <a href="https://www.bbc.com/" class="link-item">
+                    <span class="link-text">BBC Home</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=bbc.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.reuters.com/" class="link-item">
+                    <span class="link-text">Reuters</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=reuters.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.ft.com/the-big-read" class="link-item">
+                    <span class="link-text">Financial Times</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=ft.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.theguardian.com/theguardian" class="link-item">
+                    <span class="link-text">The Guardian</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=theguardian.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.lemonde.fr/en/" class="link-item">
+                    <span class="link-text">Le Monde</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=lemonde.fr" alt="" class="favicon">
+                </a>
+                <a href="https://wsj.com/print-edition/today" class="link-item">
+                    <span class="link-text">Wall Street Journal</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=wsj.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.nytimes.com/section/todayspaper" class="link-item">
+                    <span class="link-text">The New York Times</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=nytimes.com" alt="" class="favicon">
+                </a>
+
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">📰 Magazines</h2>
+            <div class="links-grid">
+                <a href="https://www.foreignaffairs.com/issues/archive" class="link-item">
+                    <span class="link-text">Foreign Affairs Magazine</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=foreignaffairs.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.economist.com/weeklyedition/archive" class="link-item">
+                    <span class="link-text">The Economist</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=economist.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.theatlantic.com/world/" class="link-item">
+                    <span class="link-text">The Atlantic</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=theatlantic.com" alt="" class="favicon">
+                </a>
+                <a href="https://time.com/vault/" class="link-item">
+                    <span class="link-text">The TIME Magazine</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=time.com" alt="" class="favicon">
+                </a>
+                <a href="https://harpers.org/" class="link-item">
+                    <span class="link-text">Harper's Magazine</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=harpers.org" alt="" class="favicon">
+                </a>
+                <a href="https://www.newyorker.com/" class="link-item">
+                    <span class="link-text">The New Yorker</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=newyorker.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.theparisreview.org/" class="link-item">
+                    <span class="link-text">Paris Review</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=theparisreview.org" alt="" class="favicon">
+                </a>
+                <a href="https://granta.com/" class="link-item">
+                    <span class="link-text">Granta</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=granta.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.lrb.co.uk/" class="link-item">
+                    <span class="link-text">London Review of Books</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=lrb.co.uk" alt="" class="favicon">
+                </a>
+                <a href="https://www.nybooks.com/" class="link-item">
+                    <span class="link-text">The New York Review of Books</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=nybooks.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.sciencefocus.com/" class="link-item">
+                    <span class="link-text">BBC Science Focus Magazine</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=sciencefocus.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.historyextra.com/" class="link-item">
+                    <span class="link-text">BBC History Magazine</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=historyextra.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.smithsonianmag.com/" class="link-item">
+                    <span class="link-text">Smithsonian Magazine</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=smithsonianmag.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.scientificamerican.com/" class="link-item">
+                    <span class="link-text">Scientific American</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=scientificamerican.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.newscientist.com/" class="link-item">
+                    <span class="link-text">New Scientist</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=newscientist.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.science.org/" class="link-item">
+                    <span class="link-text">Science</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=science.org" alt="" class="favicon">
+                </a>
+                <a href="https://www.nature.com/" class="link-item">
+                    <span class="link-text">Nature</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=nature.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.popsci.com/" class="link-item">
+                    <span class="link-text">Popular Science</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=popsci.com" alt="" class="favicon">
+                </a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">🌏 Eastern News</h2>
+            <div class="links-grid">
+
+                <a href="https://w3newspapers.com/bangladesh/" class="link-item">
+                    <span class="link-text">Bangladeshi Newspapers</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=w3newspapers.com" alt="" class="favicon">
+                </a>
+                <a href="https://thefinancialexpress.com.bd/" class="link-item">
+                    <span class="link-text">The Financial Express</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=thefinancialexpress.com.bd" alt="" class="favicon">
+                </a>
+                <a href="https://www.tbsnews.net/" class="link-item">
+                    <span class="link-text">The Business Standard</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=tbsnews.net" alt="" class="favicon">
+                </a>
+                <a href="https://www.thedailystar.net/todays-news" class="link-item">
+                    <span class="link-text">The Daily Star</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=thedailystar.net" alt="" class="favicon">
+                </a>
+                <a href="https://www.newagebd.net/" class="link-item">
+                    <span class="link-text">New Age</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=newagebd.net" alt="" class="favicon">
+                </a>
+                <a href="https://www.prothomalo.com/" class="link-item">
+                    <span class="link-text">প্রথম আলো</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=prothomalo.com" alt="" class="favicon">
+                </a>
+                <a href="https://bonikbarta.com/print-edition" class="link-item">
+                    <span class="link-text">বণিক বার্তা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=bonikbarta.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.tbsnews.net/bangla/" class="link-item">
+                    <span class="link-text">The Business Standard বাংলা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=tbsnews.net" alt="" class="favicon">
+                </a>
+                <a href="https://bangla.thedailystar.net/" class="link-item">
+                    <span class="link-text">দা ডেইলি স্টার বাংলা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=bangla.thedailystar.net" alt="" class="favicon">
+                </a>
+                <a href="https://netra.news/" class="link-item">
+                    <span class="link-text">Netra News</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=netra.news" alt="" class="favicon">
+                </a>
+                <a href="https://www.dailyamardesh.com/" class="link-item">
+                    <span class="link-text">আমার দেশ</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=dailyamardesh.com" alt="" class="favicon">
+                </a>
+                <a href="https://mzamin.com/paper.php" class="link-item">
+                    <span class="link-text">মানবজমিন</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=mzamin.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.bbc.com/bengali" class="link-item">
+                    <span class="link-text">BBC News বাংলা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=bbc.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.dw.com/bn/" class="link-item">
+                    <span class="link-text">DW বাংলা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=dw.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.voabangla.com/" class="link-item">
+                    <span class="link-text">VOA বাংলা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=voabangla.com" alt="" class="favicon">
+                </a>
+                <a href="https://parstoday.ir/bn" class="link-item">
+                    <span class="link-text">রেডিও তেহরান বাংলা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=parstoday.ir" alt="" class="favicon">
+                </a>
+                <a href="https://www.thehindu.com/opinion/editorial/" class="link-item">
+                    <span class="link-text">The Hindu</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=thehindu.com" alt="" class="favicon">
+                </a>
+                <a href="https://www.indianexpress.com/section/opinion/" class="link-item">
+                    <span class="link-text">The Indian Express</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=indianexpress.com" alt="" class="favicon">
+                </a>
+                <a href="https://andolanpotrika.com/" class="link-item">
+                    <span class="link-text">আন্দোলন | সাপ্তাহিক পত্রিকা</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=andolanpotrika.com" alt="" class="favicon">
+                </a>
+                <a href="https://lalshongbad.wordpress.com/" class="link-item">
+                    <span class="link-text">লাল সংবাদ/lal shongbad</span>
+                    <img src="https://www.google.com/s2/favicons?sz=64&domain=lalshongbad.wordpress.com" alt="" class="favicon">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+  </html>
